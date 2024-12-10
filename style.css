@@ -5,7 +5,7 @@ body {
 
 /*************************HEADER****************************/
 /* MENU - MOBIL */
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .header {
     background-color: #fff6ed;
     position: relative;
@@ -123,7 +123,7 @@ body {
 
 /* MENU - DESKTOP */
 
-@media (min-width: 768px) {
+@media (min-width: 950px) {
   .header {
     padding-inline: 2rem;
     padding-block: 2rem;
@@ -169,7 +169,7 @@ body {
   }
   /* 48em = 768px */
 
-  @media (min-width: 48em) {
+  @media (min-width: 950px) {
     .header li {
       float: left;
     }

@@ -126,7 +126,7 @@ body {
 @media (min-width: 1010px) {
   .header {
     padding-inline: 2vw;
-    padding-block: 2vw;
+    padding-block: 1vw;
   }
   #menu-btn {
     display: none;

@@ -137,11 +137,11 @@ body {
     color: #b40c0c;
     text-decoration: none;
     font-family: "ivymode", sans-serif;
-    font-size: 3rem;
+    font-size: 3vw;
     font-weight: 600;
     font-style: normal;
-    padding-left: 4rem;
-    padding-top: 3rem;
+    padding-left: 4vw;
+    padding-top: 3vw;
   }
 
   /* Styling til menu */
@@ -175,7 +175,7 @@ body {
     }
 
     .header li a {
-      padding: 20px 30px;
+      padding: 20px 0;
     }
 
     .header .menu {

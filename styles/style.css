@@ -1,0 +1,243 @@
+/*************************GENERALT****************************/
+body {
+  background-color: #fff6ed;
+}
+
+/*************************HEADER****************************/
+/* MENU - MOBIL */
+@media (max-width: 1010px) {
+  .header {
+    background-color: #fff6ed;
+    position: relative;
+    width: 100%;
+    z-index: 3;
+    display: inline-block;
+  }
+
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff6ed;
+  }
+
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #000000;
+    color: #666666;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: "Inconsolata", monospace;
+    transition: color 0.3s ease;
+  }
+
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #fff6ed;
+  }
+
+  .tekst_logo {
+    color: #b40c0c;
+    text-decoration: none;
+    font-family: "ivymode", sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  /* menu */
+
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+
+  /* menu icon */
+
+  .header .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+
+  .header .menu-icon .navicon {
+    background: #666666;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
+
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #666666;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+
+  /* menu btn */
+
+  .header .menu-btn {
+    display: none;
+  }
+
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+}
+
+/* MENU - DESKTOP */
+
+@media (min-width: 1010px) {
+  .header {
+    padding-inline: 2vw;
+    padding-block: 2vw;
+  }
+  #menu-btn {
+    display: none;
+  }
+
+  /* Styling til logo */
+  .tekst_logo {
+    color: #b40c0c;
+    text-decoration: none;
+    font-family: "ivymode", sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  /* Styling til menu */
+  .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu li {
+    margin-left: 80px;
+  }
+
+  .menu a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: "Inconsolata", monospace;
+    transition: color 0.3s ease;
+  }
+
+  .menu a:hover {
+    color: #b40c0c; /* Farve ved hover */
+  }
+  /* 48em = 768px */
+
+  @media (min-width: 1010px) {
+    .header li {
+      float: left;
+    }
+
+    .header li a {
+      padding: 20px 0;
+    }
+
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+      padding-right: 3rem;
+      padding-top: 2rem;
+    }
+
+    .header .menu-icon {
+      display: none;
+    }
+  }
+}
+/*************************FOOTER****************************/
+
+/*************************FOOTER****************************/
+footer {
+  background-color: #fff6ed;
+  color: #666666;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+body,
+html {
+  height: 100%;
+}
+body footer {
+  position: sticky;
+  top: 100vh;
+}
+
+footer a {
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #666666;
+}
+
+.social_icons {
+  margin: 10px 0;
+}
+
+.social_icons a {
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.social_icons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social_icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer_container {
+  font-family: "Inconsolata", monospace;
+}

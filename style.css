@@ -5,7 +5,7 @@ body {
 
 /*************************HEADER****************************/
 /* MENU - MOBIL */
-@media (max-width: 950px) {
+@media (max-width: 1010px) {
   .header {
     background-color: #fff6ed;
     position: relative;
@@ -123,10 +123,10 @@ body {
 
 /* MENU - DESKTOP */
 
-@media (min-width: 950px) {
+@media (min-width: 1010px) {
   .header {
-    padding-inline: 2rem;
-    padding-block: 2rem;
+    padding-inline: 2vw;
+    padding-block: 2vw;
   }
   #menu-btn {
     display: none;
@@ -137,11 +137,9 @@ body {
     color: #b40c0c;
     text-decoration: none;
     font-family: "ivymode", sans-serif;
-    font-size: 3vw;
+    font-size: 3rem;
     font-weight: 600;
     font-style: normal;
-    padding-left: 4vw;
-    padding-top: 3vw;
   }
 
   /* Styling til menu */
@@ -169,7 +167,7 @@ body {
   }
   /* 48em = 768px */
 
-  @media (min-width: 950px) {
+  @media (min-width: 1010px) {
     .header li {
       float: left;
     }

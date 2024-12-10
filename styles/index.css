@@ -33,12 +33,20 @@
     padding-block: 5rem;
   }
   .galleri_liste {
+    position: absolute;
     padding-left: 3rem;
   }
-  .galleri img {
-    width: 831px; /* Tilpas bredde */
-    height: 920px; /* Tilpas højde */
-    object-fit: cover; /* Sikrer at billedet ikke strækkes */
-    padding-right: 16rem;
-  }
+}
+.galleri_liste li {
+  list-style: none;
+  padding-top: 3rem;
+  padding-right: 3rem;
+  border-bottom: #b40c0c solid;
+}
+
+.galleri img {
+  width: 871px; /* Tilpas bredde */
+  height: 960px; /* Tilpas højde */
+  object-fit: cover; /* Sikrer at billedet ikke strækkes */
+  padding-left: 43rem;
 }

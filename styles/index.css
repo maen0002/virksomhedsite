@@ -15,6 +15,7 @@
     font-weight: 500;
     color: #b40c0c;
     margin-top: 1rem;
+    letter-spacing: 1rem;
   }
 
   .train img {
@@ -34,19 +35,59 @@
   }
   .galleri_liste {
     position: absolute;
-    padding-left: 3rem;
+    left: 10%;
+    top: 130%;
+  }
+
+  .galleri_liste li {
+    list-style: none;
+    padding-top: 3rem;
+    padding-right: 3rem;
+    border-bottom: #b40c0c solid;
+    font-family: "Inconsolata", monospace;
+    font-size: 30px;
+  }
+  .galleri_liste ul {
+    padding-inline-start: 10px;
+  }
+  .galleri img {
+    width: 901px; /* Tilpas bredde */
+    height: 970px; /* Tilpas højde */
+    object-fit: cover; /* Sikrer at billedet ikke strækkes */
+    padding-right: 10rem;
   }
 }
-.galleri_liste li {
-  list-style: none;
-  padding-top: 3rem;
-  padding-right: 3rem;
-  border-bottom: #b40c0c solid;
+
+.galleri_liste a {
+  color: #666666;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "Inconsolata", monospace;
+  transition: color 0.3s ease;
+}
+.galleri_liste a:hover {
+  color: #b40c0c; /* Farve ved hover */
 }
 
-.galleri img {
-  width: 871px; /* Tilpas bredde */
-  height: 960px; /* Tilpas højde */
-  object-fit: cover; /* Sikrer at billedet ikke strækkes */
-  padding-left: 43rem;
+.galleri_link a {
+  position: absolute;
+  left: 10.5%;
+  top: 178%;
+  color: #718bae;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-family: "Inconsolata", monospace;
+  transition: color 0.3s ease;
+}
+
+.galleri_link a:hover {
+  color: #191967; /* Farve ved hover */
+}
+
+.bag_kameraet {
+  padding-inline: 4rem;
+}
+.bag_kameraet img {
+  height: 520px;
+  width: 844px;
 }

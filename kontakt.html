@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
     <!--links til filer-->
+    <link rel="stylesheet" href="styles/kontakt.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
 </head>
@@ -28,7 +29,40 @@
         </ul>
     </header>
 
-    <main></main>
+    <main>
+
+        <div class="img_text_grid">
+            <div class="hero_img">
+                <img src="img/Papmenneske.webp" alt="Person med papkasse på hovedet">
+            </div>
+            <div class="img_text">
+                <h2>KONTAKT</h2>
+            </div>
+        </div>
+        <form>
+            <div class="form_felt">
+                <label for="full-name">Fulde Navn</label>
+                <input id="full-name" name="fname" type="text">
+            </div>
+            <div class="form_felt">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email">
+            </div>
+            <div class="form_felt">
+                <label for="emne">Emne</label>
+                <input id="emne" name="emne" type="text">
+            </div>
+            <div class="form_felt">
+                <label>
+                    Besked
+                    <textarea name="besked" rows="5"></textarea>
+                </label>
+            </div>
+            <button type="submit">Send</button>
+
+        </form>
+
+    </main>
     <footer>
         <div class="footer_container">
             <p>Find os på:</p>

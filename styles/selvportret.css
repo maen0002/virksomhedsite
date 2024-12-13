@@ -1,0 +1,219 @@
+/* 
+FARVER: 
+RØD: #b40c0c;
+GRÅ: #66666;
+
+FONTS: 
+font-family: "Inconsolata", monospace;
+font-family: "ivymode", sans-serif;
+*/
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.photography-section {
+  position: relative;
+}
+
+.vertical-title {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: "ivymode", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #b40c0c;
+  position: absolute;
+  left: -1.5rem;
+  top: -9px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-left: 4rem;
+}
+
+.photo {
+  position: relative; /* Gør det muligt at flytte billeder */
+}
+
+.photo:nth-child(even) {
+  transform: translateX(70px); /* Flyt lidt mod højre */
+}
+
+.photo img {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-bottom: 0.9rem;
+  /*hover effekt*/
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.third-photo img {
+  width: 100%;
+}
+
+.fourth-photo img {
+  width: 100%;
+  transform: translateX(-70px); /* Flyt lidt mod højre */
+}
+
+/* .photo:hover img { */
+/* transform: scale(1.1); */
+/* Forstør billede en smule */
+/* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);  */
+/* scale: 1.2; */
+/* } */
+
+.photo p {
+  text-align: center;
+  font-family: "Inconsolata", monospace;
+  font-size: 1rem;
+  color: #b40c0c;
+  margin-top: 1.2rem;
+}
+
+/* Style for the first photo's rotated text */
+.photo.first-photo {
+  position: relative;
+}
+
+.photo.first-photo .rotated-text {
+  position: absolute;
+  top: 87%;
+  right: -68%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: left center;
+  white-space: nowrap; /* Ensures text stays on one line */
+  font-size: 1rem;
+  font-family: "Inconsolata", monospace;
+  color: #b40c0c;
+}
+
+/* Style for the fourth photo's rotated text */
+.photo.fourth-photo {
+  position: relative;
+}
+
+.photo.fourth-photo .rotated-text {
+  position: absolute;
+  top: 86%;
+  left: -95px;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: left center;
+  white-space: nowrap;
+  font-size: 1rem;
+  font-family: "Inconsolata", monospace;
+  color: #b40c0c;
+}
+
+@media (min-width: 768px) {
+  .photography-section {
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: 80dvh;
+  }
+  .photo-grid {
+    display: flex; /* Gør billederne til en horisontal række */
+    overflow-x: auto;
+    /* Tillad horisontal scrolling */
+    scroll-snap-type: x mandatory; /* Snap til billeder under scrolling */
+    gap: 1rem;
+    padding-bottom: 1rem; /* Lidt luft i bunden */
+    height: 80dvh;
+    align-items: center;
+  }
+
+  .photo {
+    flex: 0 0 auto; /* Sørg for at hvert billede har en fast bredde */
+    width: 42%; /* Bredde på hvert billede i galleriet */
+    text-align: center; /* Centrer teksten under hvert billede */
+    scroll-snap-align: start; /* Snap til start af hvert billede */
+    /* height: 61dvh; ved at fjerne height, bliver alle billeder centreret vandret*/
+  }
+
+  .vertical-title {
+    font-size: 2.5rem;
+    left: -4rem;
+    top: -13px;
+  }
+
+  .photo img {
+    width: 100%; /* Billederne fylder deres container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Bevar hover transition */
+  }
+
+  .photo:hover img {
+    transform: scale(1.4);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1; /*når man hover over, er billedet foran de to ved siden af*/
+  }
+
+  .photo p {
+    transform: none; /* Fjern rotation */
+    position: static; /* Fjern absolut positionering */
+    text-align: center; /* Centrer teksten under billedet */
+    margin-top: 1rem; /* Bevar luft over teksten */
+    font-size: 1.3rem;
+  }
+
+  .photo.first-photo .rotated-text,
+  .photo.fourth-photo .rotated-text {
+    transform: none; /* Fjern rotation for specifikt roterede tekster */
+    position: static; /* Fjern absolut positionering */
+    text-align: center; /* Centrer teksten */
+    white-space: normal; /* Tillad teksten at brydes til flere linjer */
+    font-size: 1.3rem;
+  }
+
+  /*fjerner at billederne er rykket til højre og ventre*/
+  .photo:nth-child(even) {
+    transform: none; /* Fjern forskydningen */
+  }
+
+  /*SKJUL SCROLLBAR I FIREFOX OG ALLE ANDRE*/
+  /* .photo-grid::-webkit-scrollbar {
+    display: none; 
+  }
+
+  .photo-grid {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  } */
+
+  /*STYLE AF SCROLLBAREN*/
+  .photo-grid::-webkit-scrollbar {
+    width: 12px; /* Bredden af scrollbaren */
+  }
+
+  .photo-grid::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Baggrundsfarve til scrollbarens spor */
+  }
+
+  .photo-grid::-webkit-scrollbar-thumb {
+    background: #b40c0c; /* Scrollbarens farve */
+    border-radius: 6px; /* Afrundede hjørner */
+  }
+
+  .photo-grid::-webkit-scrollbar-thumb:hover {
+    background: darkred; /* Scrollbarens farve ved hover */
+  }
+
+  /* Til andre browsere */
+  .photo-grid {
+    scrollbar-width: thin; /* Tynd scrollbar til Firefox */
+    scrollbar-color: #b40c0c #f0f0f0; /* Farve til scrollbar og baggrund */
+  }
+
+  .fourth-photo img {
+    width: 100%;
+    transform: none; /*fjerner translation mod højre*/
+  }
+}

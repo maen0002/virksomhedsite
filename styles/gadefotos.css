@@ -49,6 +49,7 @@ main {
   width: 75%;
   height: auto;
   display: block;
+  margin-bottom: 1rem;
   /*hover effekt*/
   /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
@@ -75,7 +76,7 @@ main {
 
 .photo.first-photo .rotated-text {
   position: absolute;
-  top: 93%;
+  top: 88%;
   right: -65px; /* Adjust the horizontal offset */
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: left center;
@@ -142,7 +143,7 @@ main {
     width: 40%; /* Bredde på hvert billede i galleriet */
     text-align: center; /* Centrer teksten under hvert billede */
     scroll-snap-align: start; /* Snap til start af hvert billede */
-    height: 61dvh;
+    /* height: 61dvh; */
   }
 
   .vertical-title {
@@ -157,10 +158,33 @@ main {
   }
 
   .photo:hover img {
-    transform: scale(1.5); /* Forstør billede på hover */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Tilføj skygge på hover */
+    transform: scale(1.4);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     position: relative;
-    z-index: 1;
+    z-index: 1; /*når man hover over, er billedet foran de to ved siden af*/
+  }
+
+  .photo p {
+    transform: none; /* Fjern rotation */
+    position: static; /* Fjern absolut positionering */
+    text-align: center; /* Centrer teksten under billedet */
+    margin-top: 1rem; /* Bevar luft over teksten */
+    font-size: 1.3rem;
+  }
+
+  .photo.first-photo .rotated-text,
+  .photo.third-photo .rotated-text,
+  .photo.fourth-photo .rotated-text {
+    transform: none; /* Fjern rotation for specifikt roterede tekster */
+    position: static; /* Fjern absolut positionering */
+    text-align: center; /* Centrer teksten */
+    white-space: normal; /* Tillad teksten at brydes til flere linjer */
+    font-size: 1.3rem;
+  }
+
+  /*fjerner at billederne er rykket til højre og ventre*/
+  .photo:nth-child(even) {
+    transform: none; /* Fjern forskydningen */
   }
 
   /*SKJUL SCROLLBAR I FIREFOX OG ALLE ANDRE*/
@@ -173,24 +197,27 @@ main {
     scrollbar-width: none; 
   } */
 
-  .photo p {
-    transform: none; /* Fjern rotation */
-    position: static; /* Fjern absolut positionering */
-    text-align: center; /* Centrer teksten under billedet */
-    margin-top: 0.5rem; /* Bevar luft over teksten */
+  /*STYLE AF SCROLLBAREN*/
+  .photo-grid::-webkit-scrollbar {
+    width: 12px; /* Bredden af scrollbaren */
   }
 
-  .photo.first-photo .rotated-text,
-  .photo.third-photo .rotated-text,
-  .photo.fourth-photo .rotated-text {
-    transform: none; /* Fjern rotation for specifikt roterede tekster */
-    position: static; /* Fjern absolut positionering */
-    text-align: center; /* Centrer teksten */
-    white-space: normal; /* Tillad teksten at brydes til flere linjer */
+  .photo-grid::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Baggrundsfarve til scrollbarens spor */
   }
 
-  /*fjerner at billederne er rykket til højre og ventre*/
-  .photo:nth-child(even) {
-    transform: none; /* Fjern forskydningen */
+  .photo-grid::-webkit-scrollbar-thumb {
+    background: #b40c0c; /* Scrollbarens farve */
+    border-radius: 6px; /* Afrundede hjørner */
+  }
+
+  .photo-grid::-webkit-scrollbar-thumb:hover {
+    background: darkred; /* Scrollbarens farve ved hover */
+  }
+
+  /* Til andre browsere */
+  .photo-grid {
+    scrollbar-width: thin; /* Tynd scrollbar til Firefox */
+    scrollbar-color: #b40c0c #f0f0f0; /* Farve til scrollbar og baggrund */
   }
 }

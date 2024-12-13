@@ -1,3 +1,13 @@
+img {
+  object-fit: cover;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
 @media (min-width: 1010px) {
   .logo_overskrift {
     position: absolute;
@@ -8,7 +18,9 @@
     padding-left: 7rem;
     color: #b40c0c;
   }
-
+  .logo {
+    width: 100px;
+  }
   h2 {
     font-family: "ivymode", sans-serif;
     font-size: 70px;
@@ -23,71 +35,205 @@
     height: 755px; /* Tilpas højde */
     object-fit: cover; /* Sikrer at billedet ikke strækkes */
   }
-
+  .img1 {
+    padding-right: 10rem;
+  }
   .train {
     padding-left: 40rem;
-    padding-block: 5rem;
+    padding-block: 2.5rem;
   }
   .galleri {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-block: 5rem;
+    padding-right: 10rem;
   }
-  .galleri_liste {
-    position: absolute;
-    left: 10%;
-    top: 130%;
+  .liste {
+    padding-inline: 5rem;
+    padding-top: 8rem;
   }
-
-  .galleri_liste li {
-    list-style: none;
-    padding-top: 3rem;
-    padding-right: 3rem;
-    border-bottom: #b40c0c solid;
-    font-family: "Inconsolata", monospace;
-    font-size: 30px;
-  }
-  .galleri_liste ul {
+  .liste ul {
     padding-inline-start: 10px;
   }
+  .liste li {
+    list-style: none;
+    padding-block: 2rem;
+    border-bottom: #b40c0c solid;
+    font-size: 2rem;
+    font-family: "Inconsolata", monospace;
+  }
+
+  .liste a {
+    color: #666666;
+    text-decoration: none; /* Fjern understregning */
+    transition: color 0.3s ease;
+  }
+
+  .liste a:hover {
+    color: #b40c0c; /* Skift farve ved hover */
+  }
+  .link {
+    padding-left: 5.7rem;
+    padding-top: 3rem;
+  }
+  .link a {
+    font-size: 1.5rem;
+    font-family: "Inconsolata", monospace;
+    transition: color 0.3s ease;
+    color: #718bae;
+  }
+
   .galleri img {
     width: 901px; /* Tilpas bredde */
     height: 970px; /* Tilpas højde */
     object-fit: cover; /* Sikrer at billedet ikke strækkes */
-    padding-right: 10rem;
+  }
+
+  .bag_kameraet {
+    padding-block: 8rem;
+    text-align: center;
+    padding-inline: 12rem;
+  }
+  .bag_kameraet p {
+    font-size: 1.3rem;
+    font-family: "Inconsolata", monospace;
+    color: #666666;
+    padding-bottom: 2rem;
+    line-height: 2.5rem;
+    padding-inline: 10vw;
+  }
+
+  .bag_kameraet a {
+    color: #718bae;
+    text-decoration: none;
+    font-size: 1.7vw;
+    font-family: "Inconsolata", monospace;
+    transition: color 0.3s ease;
+  }
+  .link2 a {
+    font-size: 1.5rem;
+    font-family: "Inconsolata", monospace;
+    transition: color 0.3s ease;
+    color: #718bae;
+  }
+  .img3 img {
+    width: 844px;
+    height: auto;
+  }
+  .img1,
+  .img2,
+  .img3 {
+    position: relative; /* Gør det muligt at placere elementer relativt inde i denne container */
+    display: flex; /* For at sikre billedet fylder korrekt */
+    justify-content: center; /* Holder billedet centreret */
+    font-size: 1.5rem;
+    font-family: "Inconsolata", monospace;
+    color: #b40c0c;
+  }
+  .link a:hover {
+    color: #b40c0c; /* Farve ved hover */
   }
 }
+@media (max-width: 1010px) {
+  h2 {
+    font-family: "ivymode", sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    color: #b40c0c;
+    margin-top: 1rem;
+  }
+  .logo {
+    display: none;
+  }
+  .img2 {
+    display: none;
+  }
+  .logo_overskrift {
+    position: absolute;
+    top: -1%;
+    left: 1%;
+    color: #b40c0c;
+    text-decoration: none;
+    font-family: "ivymode", sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    font-style: normal;
+    z-index: 1;
+  }
 
-.galleri_liste a {
-  color: #666666;
-  text-decoration: none;
-  font-size: 2rem;
-  font-family: "Inconsolata", monospace;
-  transition: color 0.3s ease;
+  .img1 {
+    padding-top: 3rem;
+  }
+  .galleri_h2 {
+    padding-left: 8rem;
+    padding-top: 3rem;
+    color: #fff6ed;
+  }
+  .hele_liste {
+    background-color: #b40c0c;
+    margin-left: 6rem;
+  }
+
+  .liste li {
+    list-style: none;
+    padding-block: 2rem;
+    border-bottom: #fff6ed solid;
+    font-size: 2rem;
+    font-family: "Inconsolata", monospace;
+    margin-right: 3rem;
+  }
+
+  .liste a {
+    color: #fff6ed;
+    text-decoration: none; /* Fjern understregning */
+    transition: color 0.3s ease;
+  }
+  .link {
+    padding-left: 2.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .link a {
+    font-size: 1.5rem;
+    font-family: "Inconsolata", monospace;
+    color: #fff6ed;
+  }
+  .link2 a {
+    font-size: 1.5rem;
+    font-family: "Inconsolata", monospace;
+    transition: color 0.3s ease;
+    color: #718bae;
+  }
+
+  .bag_kameraet {
+    padding-block: 6rem;
+    padding-inline: 2rem;
+  }
+  .bag_kameraet p {
+    font-size: 1rem;
+    font-family: "Inconsolata", monospace;
+    color: #666666;
+    line-height: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .train {
+    padding-bottom: 4rem;
+  }
 }
-.galleri_liste a:hover {
+.link2 a:hover {
   color: #b40c0c; /* Farve ved hover */
 }
 
-.galleri_link a {
-  position: absolute;
-  left: 10.5%;
-  top: 178%;
-  color: #718bae;
-  text-decoration: none;
-  font-size: 1.7rem;
+.rotated-text {
+  writing-mode: vertical-lr;
+}
+.img1,
+.img3 {
+  position: relative; /* Gør det muligt at placere elementer relativt inde i denne container */
+  display: flex; /* For at sikre billedet fylder korrekt */
+  justify-content: center; /* Holder billedet centreret */
+  font-size: 1.5rem;
   font-family: "Inconsolata", monospace;
-  transition: color 0.3s ease;
-}
-
-.galleri_link a:hover {
-  color: #191967; /* Farve ved hover */
-}
-
-.bag_kameraet {
-  padding-inline: 4rem;
-}
-.bag_kameraet img {
-  height: 520px;
-  width: 844px;
+  color: #b40c0c;
 }

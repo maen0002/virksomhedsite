@@ -14,7 +14,7 @@ a {
     top: 7%;
     font-family: "ivymode", sans-serif;
     z-index: 1;
-    font-size: 150px;
+    font-size: 120px;
     padding-left: 7rem;
     color: #b40c0c;
   }
@@ -23,7 +23,7 @@ a {
   }
   h2 {
     font-family: "ivymode", sans-serif;
-    font-size: 70px;
+    font-size: 5vw;
     font-weight: 500;
     color: #b40c0c;
     margin-top: 1rem;
@@ -31,12 +31,12 @@ a {
   }
 
   .train img {
-    width: 907px; /* Tilpas bredde */
-    height: 755px; /* Tilpas højde */
+    width: 857px; /* Tilpas bredde */
+    height: 555px; /* Tilpas højde */
     object-fit: cover; /* Sikrer at billedet ikke strækkes */
   }
   .img1 {
-    padding-right: 10rem;
+    padding-right: 3rem;
   }
   .train {
     padding-left: 40rem;
@@ -46,10 +46,10 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-block: 5rem;
-    padding-right: 10rem;
+    padding-right: 5rem;
   }
   .liste {
-    padding-inline: 5rem;
+    padding-inline: 8rem;
     padding-top: 8rem;
   }
   .liste ul {
@@ -59,7 +59,7 @@ a {
     list-style: none;
     padding-block: 2rem;
     border-bottom: #b40c0c solid;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-family: "Inconsolata", monospace;
   }
 
@@ -73,7 +73,7 @@ a {
     color: #b40c0c; /* Skift farve ved hover */
   }
   .link {
-    padding-left: 5.7rem;
+    padding-left: 8.5rem;
     padding-top: 3rem;
   }
   .link a {
@@ -84,8 +84,8 @@ a {
   }
 
   .galleri img {
-    width: 901px; /* Tilpas bredde */
-    height: 970px; /* Tilpas højde */
+    width: 701px; /* Tilpas bredde */
+    height: 770px; /* Tilpas højde */
     object-fit: cover; /* Sikrer at billedet ikke strækkes */
   }
 
@@ -150,12 +150,12 @@ a {
   }
   .logo_overskrift {
     position: absolute;
-    top: -1%;
-    left: 1%;
+    top: 5%;
+    left: 2%;
     color: #b40c0c;
     text-decoration: none;
     font-family: "ivymode", sans-serif;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 600;
     font-style: normal;
     z-index: 1;
@@ -165,7 +165,7 @@ a {
     padding-top: 3rem;
   }
   .galleri_h2 {
-    padding-left: 8rem;
+    padding-left: 5rem;
     padding-top: 3rem;
     color: #fff6ed;
   }
@@ -178,7 +178,7 @@ a {
     list-style: none;
     padding-block: 2rem;
     border-bottom: #fff6ed solid;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: "Inconsolata", monospace;
     margin-right: 3rem;
   }
@@ -210,7 +210,7 @@ a {
     padding-inline: 2rem;
   }
   .bag_kameraet p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: "Inconsolata", monospace;
     color: #666666;
     line-height: 2.5rem;

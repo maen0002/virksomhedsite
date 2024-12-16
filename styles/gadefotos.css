@@ -29,7 +29,7 @@ main {
   font-family: "ivymode", sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #b40c0c;
+  color: var(--primary);
   position: absolute;
   left: -1.5rem;
   top: -9px;
@@ -72,7 +72,7 @@ main {
   text-align: center;
   font-family: "Inconsolata", monospace;
   font-size: 1rem;
-  color: #b40c0c;
+  color: var(--primary);
   margin-top: 1.2rem;
 }
 
@@ -92,7 +92,7 @@ main {
   /* Ensures text stays on one line */
   font-size: 1rem;
   font-family: "Inconsolata", monospace;
-  color: #b40c0c;
+  color: var(--primary);
 }
 
 /* Style for the third photo's rotated text */
@@ -111,7 +111,7 @@ main {
   /* Ensures text stays on one line */
   font-size: 1rem;
   font-family: "Inconsolata", monospace;
-  color: #b40c0c;
+  color: var(--primary);
 }
 
 /* Style for the fourth photo's rotated text */
@@ -130,7 +130,7 @@ main {
   /* Ensures text stays on one line */
   font-size: 1rem;
   font-family: "Inconsolata", monospace;
-  color: #b40c0c;
+  color: var(--primary);
 }
 
 @media (min-width: 768px) {
@@ -243,7 +243,7 @@ main {
   }
 
   .photo-grid::-webkit-scrollbar-thumb {
-    background: #b40c0c;
+    background: var(--primary);
     /* Scrollbarens farve */
     border-radius: 6px;
     /* Afrundede hjørner */
@@ -258,7 +258,7 @@ main {
   .photo-grid {
     scrollbar-width: thin;
     /* Tynd scrollbar til Firefox */
-    scrollbar-color: #b40c0c #f0f0f0;
+    scrollbar-color: var(--primary) #f0f0f0;
     /* Farve til scrollbar og baggrund */
   }
 

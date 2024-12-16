@@ -40,7 +40,7 @@ img {
 }
 
 .img_text h2 {
-  color: #b40c0c;
+  color: var(--primary);
   text-decoration: none;
   font-family: "ivymode", sans-serif;
   font-size: 6rem;

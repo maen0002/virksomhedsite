@@ -52,7 +52,7 @@ a {
   .gridtxt1 {
     writing-mode: vertical-lr;
     font-family: "IvyMode", serif;
-    color: #b40c0c;
+    color: var(--primary);
     font-weight: 600;
     text-align: center;
     font-size: 7vw;
@@ -63,7 +63,7 @@ a {
   .gridtxt2 {
     writing-mode: vertical-rl;
     font-family: "IvyMode", serif;
-    color: #b40c0c;
+    color: var(--primary);
     font-weight: 600;
     text-align: center;
     font-size: 7vw;
@@ -102,7 +102,7 @@ a {
 
   .gridtxt1 {
     font-family: "IvyMode", serif;
-    color: #b40c0c;
+    color: var(--primary);
     font-weight: 600;
     font-size: 7vw;
     align-self: center;
@@ -110,7 +110,7 @@ a {
 
   .gridtxt2 {
     font-family: "IvyMode", serif;
-    color: #b40c0c;
+    color: var(--primary);
     font-weight: 600;
     text-align: center;
     font-size: 7vw;

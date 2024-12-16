@@ -46,7 +46,7 @@ img {
 }
 
 .img_text h2 {
-  color: #b40c0c;
+  color: var(--primary);
   text-decoration: none;
   font-family: "ivymode", sans-serif;
   font-size: 6rem;
@@ -60,7 +60,7 @@ label {
   font-size: 1rem;
   font-weight: 200;
   font-style: normal;
-  color: #393949;
+  color: var(--secondary);
 }
 
 button {
@@ -68,7 +68,7 @@ button {
   font-size: 1rem;
   font-weight: 200;
   font-style: normal;
-  color: #393949;
+  color: var(--secondary);
 }
 
 input {
@@ -90,7 +90,7 @@ textarea {
 }
 
 button {
-  background-color: #718bae;
+  background-color: var(--accent);
   border: none;
   border-radius: 15px;
   padding: 10px 30px 10px 30px;

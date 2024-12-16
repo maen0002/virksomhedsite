@@ -13,11 +13,6 @@ img {
 a {
   text-decoration: none;
 }
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1rem;
-}
 
 @media (min-width: 1010px) {
   .logo_overskrift {
@@ -27,7 +22,7 @@ main {
     z-index: 1;
     font-size: 120px;
     padding-left: 7rem;
-    color: var();
+    color: var(--primary);
   }
   .logo {
     width: 100px;

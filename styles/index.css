@@ -1,3 +1,9 @@
+:root {
+  --primary: #b40c0c;
+  --secondary: #666666;
+  --accent: #718bae;
+}
+
 img {
   object-fit: cover;
   width: 100%;
@@ -16,7 +22,7 @@ a {
     z-index: 1;
     font-size: 120px;
     padding-left: 7rem;
-    color: #b40c0c;
+    color: var();
   }
   .logo {
     width: 100px;

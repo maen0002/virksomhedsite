@@ -1,3 +1,9 @@
+:root {
+  --primary: #b40c0c;
+  --secondary: #666666;
+  --accent: #718bae;
+}
+
 main {
   margin-inline: auto;
   max-width: 1400px;

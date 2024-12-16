@@ -7,7 +7,11 @@ FONTS:
 font-family: "Inconsolata", monospace;
 font-family: "ivymode", sans-serif;
 */
-
+:root {
+  --primary: #b40c0c;
+  --secondary: #666666;
+  --accent: #718bae;
+}
 main {
   max-width: 900px;
   margin: 0 auto;

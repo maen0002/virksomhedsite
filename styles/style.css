@@ -2,7 +2,11 @@
 body {
   background-color: #fff6ed;
 }
-
+:root {
+  --primary: #b40c0c;
+  --secondary: #666666;
+  --accent: #718bae;
+}
 /*************************HEADER****************************/
 /* MENU - MOBIL */
 @media (max-width: 1010px) {
@@ -26,7 +30,7 @@ body {
     display: block;
     padding: 20px 20px;
     border-right: 1px solid #000000;
-    color: #666666;
+    color: var(--secondary);
     text-decoration: none;
     font-size: 1.3rem;
     font-family: "Inconsolata", monospace;
@@ -36,11 +40,11 @@ body {
   .header li a:hover,
   .header .menu-btn:hover {
     background-color: #fff6ed;
-    color: #b40c0c;
+    color: var(--primary);
   }
 
   .tekst_logo {
-    color: #b40c0c;
+    color: var(--primary);
     text-decoration: none;
     font-family: "ivymode", sans-serif;
     font-size: 3rem;
@@ -67,7 +71,7 @@ body {
   }
 
   .header .menu-icon .navicon {
-    background: #666666;
+    background: var(--secondary);
     display: block;
     height: 2px;
     position: relative;
@@ -77,7 +81,7 @@ body {
 
   .header .menu-icon .navicon:before,
   .header .menu-icon .navicon:after {
-    background: #666666;
+    background: var(--secondary);
     content: "";
     display: block;
     height: 100%;
@@ -100,24 +104,24 @@ body {
     display: none;
   }
 
-  .header .menu-btn:checked~.menu {
+  .header .menu-btn:checked ~ .menu {
     max-height: 240px;
   }
 
-  .header .menu-btn:checked~.menu-icon .navicon {
+  .header .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
   }
 
-  .header .menu-btn:checked~.menu-icon .navicon:before {
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
     transform: rotate(-45deg);
   }
 
-  .header .menu-btn:checked~.menu-icon .navicon:after {
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
     transform: rotate(45deg);
   }
 
-  .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
-  .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
 }
@@ -136,7 +140,7 @@ body {
 
   /* Styling til logo */
   .tekst_logo {
-    color: #b40c0c;
+    color: var(--primary);
     text-decoration: none;
     font-family: "ivymode", sans-serif;
     font-size: 3rem;
@@ -157,7 +161,7 @@ body {
   }
 
   .menu a {
-    color: #666666;
+    color: var(--secondary);
     text-decoration: none;
     font-size: 1.3rem;
     font-family: "Inconsolata", monospace;
@@ -165,7 +169,7 @@ body {
   }
 
   .menu a:hover {
-    color: #b40c0c;
+    color: var(--primary);
     /* Farve ved hover */
   }
 
@@ -199,7 +203,7 @@ body {
 /*************************FOOTER****************************/
 footer {
   background-color: #fff6ed;
-  color: #666666;
+  color: var(--secondary);
   text-align: center;
   padding: 20px;
   font-family: Arial, sans-serif;
@@ -217,13 +221,13 @@ body footer {
 }
 
 footer a {
-  color: #666666;
+  color: var(--secondary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 footer a:hover {
-  color: #666666;
+  color: var(--secondary);
 }
 
 .social_icons {

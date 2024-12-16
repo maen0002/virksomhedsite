@@ -95,12 +95,12 @@ a {
     padding-inline: 12rem;
   }
   .bag_kameraet p {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: "Inconsolata", monospace;
     color: #666666;
     padding-bottom: 2rem;
-    line-height: 2.5rem;
-    padding-inline: 10vw;
+    line-height: 2.2rem;
+    padding-inline: 12vw;
   }
 
   .bag_kameraet a {
@@ -111,7 +111,7 @@ a {
     transition: color 0.3s ease;
   }
   .link2 a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: "Inconsolata", monospace;
     transition: color 0.3s ease;
     color: #718bae;
@@ -210,7 +210,7 @@ a {
     padding-inline: 2rem;
   }
   .bag_kameraet p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: "Inconsolata", monospace;
     color: #666666;
     line-height: 2.5rem;
